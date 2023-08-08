@@ -1,10 +1,15 @@
-import java.util.Scanner
+import java.io.BufferedReader
+import java.util.StringTokenizer
 
 fun main(args:Array<String>) {
-	val sc = Scanner(System.`in`)
+	val br = BufferedReader(System.`in`.bufferedReader())
+	val arr = ArrayList<Int>()
+	val st = StringTokenizer(br.readLine())
 
-	val a = sc.nextInt()
-	val b = sc.nextInt()
+	while (st.hasMoreTokens()) arr.add((st.nextToken().toInt()))
+
+	val a = arr[0]
+	val b = arr[1]
 
 	print(a + b)
 }
