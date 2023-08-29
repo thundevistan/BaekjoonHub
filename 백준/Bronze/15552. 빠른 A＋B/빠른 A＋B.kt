@@ -1,5 +1,3 @@
-package com.kotdev99.android.algorithm
-
 import java.util.StringTokenizer
 
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
@@ -12,5 +10,6 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
 		bw.write(sum + "\n")
 	}
 	close()
+	bw.flush()
 	bw.close()
 }
